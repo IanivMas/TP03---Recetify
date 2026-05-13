@@ -17,6 +17,10 @@ public class HomeController : Controller
     {
         return View();
     }
+    public IActionResult generarSugerencia(SugeridorReceta datos)
+    {
+        
+    }
 
     public IActionResult Privacy()
     {
