@@ -3,7 +3,15 @@
 }
 
 <div class="text-center">
-    <h1 class="display-4">Bienvenido @ViewBag.nombre</h1>
-    <form action = '@Url.Action("Home")'
+    <h1 class="display-4">Bienvenido</h1>
+    <form action = '@Url.Action("generarSugerencia","Home")' method=" get">
+        <input type="text" name = "nombre" placeholder="Nombre"/>
+        <input type="date" name = "fechaNacimiento" placeholder="Fecha de nacimiento"/>
+        <input type="radio" name = "tipoComida" value = "caliente"/>Caliente
+        <input type="radio" name = "tipoComida" value = "fria"/>Fria
+        <input type="number" name = "presupuesto" placeholder = "Presupuesto" min = "0">
+        <input type="number" name = "comensales" placeholder = "Cantidad de personas" min = "1" max = "20">
+        <input type="submit" value="Enviar datos"/>
+    </form>
 </div>
 

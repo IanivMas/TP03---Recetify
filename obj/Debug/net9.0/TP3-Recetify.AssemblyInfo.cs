@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TP3-Recetify")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ddeef9745085e0e12d8ff324b3329d3c1b4908a0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a5e90ac6b3cadb6a97c9bc19429228ee531e14f8")]
 [assembly: System.Reflection.AssemblyProductAttribute("TP3-Recetify")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TP3-Recetify")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

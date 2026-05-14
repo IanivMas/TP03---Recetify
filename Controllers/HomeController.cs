@@ -17,9 +17,15 @@ public class HomeController : Controller
     {
         return View();
     }
+    [HttpGet]
     public IActionResult generarSugerencia(SugeridorReceta datos)
     {
-        
+       ViewBag.dificultad = datos.determinarDificultad();
+       ViewBag.plato = datos.devolverComida();
+       ViewBag.tiempo = datos.calcularTiempo();
+       ViewBag.datos = datos;
+       
+        return View("generarSugerencia");
     }
 
     public IActionResult Privacy()
