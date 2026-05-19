@@ -1,4 +1,5 @@
 using System.Diagnostics;
+using System.Reflection.PortableExecutable;
 using Microsoft.AspNetCore.Mvc;
 using TP3_Recetify.Models;
 
@@ -20,9 +21,11 @@ public class HomeController : Controller
     [HttpGet]
     public IActionResult generarSugerencia(SugeridorReceta datos)
     {
+        
        ViewBag.dificultad = datos.determinarDificultad();
        ViewBag.plato = datos.devolverComida();
        ViewBag.tiempo = datos.calcularTiempo();
+       ViewBag.edad = datos.calcularEdad();
        ViewBag.datos = datos;
        
         return View("generarSugerencia");

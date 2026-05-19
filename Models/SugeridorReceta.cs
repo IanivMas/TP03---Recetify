@@ -2,11 +2,11 @@ namespace TP3_Recetify.Models;
 
 public class SugeridorReceta
 {
-    public string nombre;
-    public DateTime fechaNacimiento;
-    public string tipoComida;
-    public int presupuesto;
-    public int comensales;
+    public string nombre {get; set;}
+    public DateTime fechaNacimiento {get; set;}
+    public string tipoComida {get; set;}
+    public int presupuesto {get; set;}
+    public int comensales {get; set;}
     public SugeridorReceta ()
     {
 
@@ -22,8 +22,16 @@ public class SugeridorReceta
     public int calcularEdad()
     {
         DateTime hoy = DateTime.Today;
-        int edad = hoy.Year - fechaNacimiento.Year;
-        return edad;
+    int edad = hoy.Year - fechaNacimiento.Year;
+
+    
+     if (fechaNacimiento.Date > hoy.AddYears(-edad))
+    {
+        edad--;
+    }
+
+    return edad;
+        
     }
     public string devolverComida()
     {

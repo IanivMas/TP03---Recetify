@@ -4,14 +4,22 @@
 
 <div class="text-center">
     <h1 class="display-4">Bienvenido</h1>
-    <form action = '@Url.Action("generarSugerencia","Home")' method=" get">
+    <form action = '@Url.Action("generarSugerencia","Home")' method="get">
         <input type="text" name = "nombre" placeholder="Nombre"/>
+        <br><br>
         <input type="date" name = "fechaNacimiento" placeholder="Fecha de nacimiento"/>
+          <br><br>
+         <p>Tipo de comida:</p>
         <input type="radio" name = "tipoComida" value = "caliente"/>Caliente
+          <br><br>
         <input type="radio" name = "tipoComida" value = "fria"/>Fria
+          <br><br>
         <input type="number" name = "presupuesto" placeholder = "Presupuesto" min = "0">
+          <br><br>
         <input type="number" name = "comensales" placeholder = "Cantidad de personas" min = "1" max = "20">
+          <br><br>
         <input type="submit" value="Enviar datos"/>
     </form>
+    
 </div>
 

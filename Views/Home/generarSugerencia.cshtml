@@ -1,4 +1,9 @@
 @{
     ViewData["Title"] = "generarSugerencia";
 }
-<h1>Hola @ViewBag.datos.nombre </h1>
+<h1>Hola @ViewBag.datos.nombre, tu edad es de @ViewBag.edad años</h1>
+<h3>El plato sugerido es: @ViewBag.plato</h3>
+<h3>El tiempo estimado de preparacion es de @ViewBag.tiempo minutos</h3>
+<h3>La cantidad de personas para la que esta cocinando son @ViewBag.datos.comensales</h3>
+<h3>La dificultad del plato elegido es @ViewBag.dificultad</h3>
+<h3>¡Disfruta de la comida!</h3>
